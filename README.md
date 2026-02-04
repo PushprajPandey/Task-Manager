@@ -207,6 +207,10 @@ Frontend will run on `http://localhost:3000`
 - Description: Optional, maximum 1000 characters
 - Completed: Boolean (default: false)
 
+## 🚀 Scaling for Production
+
+To scale this application for production, the frontend and backend can be containerized using Docker and deployed behind a reverse proxy such as Nginx. Environment variables would be managed securely using platform-level secrets. MongoDB indexes can be added on frequently queried fields to improve query performance. A caching layer like Redis could be introduced for read-heavy endpoints. The frontend can be deployed via a CDN for faster delivery. Proper CORS configuration, rate limiting, and centralized logging/monitoring would ensure security and reliability at scale.
+
 ## License
 
 MIT
